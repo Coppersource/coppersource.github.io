@@ -1,0 +1,5 @@
+.floating {
+    position: fixed;
+    left: 50vw;
+    margin-left: -33.33vw;
+}
