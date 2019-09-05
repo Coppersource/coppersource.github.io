@@ -1,5 +1,98 @@
+body {
+    background: #555555;
+}
+
+body, body .container, body .container .row, main {
+    min-height: 100vh;
+}
+
+#announcement {
+    font-size: 1.7vw;
+    color: white;
+    text-align: center;
+    width: 70%;
+    margin: 26px auto;
+}
+
+#announcement a {
+    color: white;
+    font-weight: bold;
+}
+
 .floating {
     position: fixed;
     left: 50vw;
     margin-left: -33.33vw;
+}
+
+#logo {
+    width: 100%;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#innerContent {
+    resize: vertical;
+}
+
+.tabs-container {
+    /*white-space: nowrap;*/
+    font-family: 'Adam', 'Roboto', sans-serif;
+    /*display: inline-block;*/
+    text-align: center;
+}
+
+.tabs-container ul {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+.tabs-container ul li {
+    display: inline-block;
+    margin-right: -3px;
+    position: relative;
+}
+
+.tabs-container ul li a {
+    margin-right: 0;
+}
+
+.tabs-container ul li a {
+    /*color: #3c464d;*/
+    /*background: lightgrey;*/
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    line-height: 24px;
+    display: block;
+    /*padding-top: 6px;*/
+    padding-right: 12px;
+    padding-left: 12px;
+    /*padding-bottom: 10px;*/
+    text-decoration: none;
+    /*border-top-left-radius: 2px;*/
+    /*border-top-right-radius: 2px;*/
+    /*-webkit-transition: .2s all;*/
+    transition: 1s all;
+    font-weight: 700;
+    color: #fff;
+}
+
+.tabs-container ul li a:hover, .tabs-container ul li a:active, .tabs-container ul li a:focus {
+    /*background: #c9803c;*/
+    color: #fff
+}
+
+.tabs-container ul li.active a {
+    background: #c9803c;
+    color: #fff;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
 }
